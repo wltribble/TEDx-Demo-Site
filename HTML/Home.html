@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TEDxUM</title>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="../CSS/Home.css">
+</head>
+<body>
+	<header class="container">
+  	<div class="row">
+      <a class="col-sm-4 btn btn-fourth" href='Home.html'><font color="red">TED<sup>x</sup></font>UM
+      </a>
+      <nav class="col-sm-8 text-right">
+        <a class="btn btn-third" href='About.html'>
+          About
+        </a>
+        <a class="btn btn-third" href='Tickets.html'>
+          Order Tickets
+        </a>
+        <a class="btn btn-third" href='Speakers.html'>
+          Speakers
+        </a>
+        <a class="btn btn-third" href='Contact.html'>
+          Contact
+        </a>
+        <div class="dropdown">
+          <a onclick="navbarToggle()" class="btn btn-third dropbtn" id="+">+</a>
+          <div id="navbar" class="dropdown-content">
+            <a href="Theme.html">Theme</a>
+            <a href="2015.html">2015</a>
+            <a href="Team.html">Team Members</a>
+          </div>
+        </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+<section class="jumbotron">
+  <div class="container">
+    <div class="row text-center">
+      <h2>
+        THIS YEAR'S THEME
+      </h2>
+      <h3>
+        Choice • Chance • Change
+      </h3>
+      <a class="btn btn-primary" href="Theme.html" role="button">See More</a>
+    </div>
+  </div>
+  </section>
+  <section id="links" class="home-links row">
+    <ul>
+      <li class="col-lg-3 col-md-6 col-sm-12">
+        <a class="home-links btn btn-home" href="About.html">
+            <p>
+              About TEDx
+            </p>
+            <div class="img" style="background-image:url('http://onebus.ch/wp-content/uploads/2015/04/TEDxBern-5.jpg');"></div>
+          </a>
+      </li>
+      <li class="col-lg-3 col-md-6 col-sm-12">
+        <a class="home-links btn btn-home" href='Speakers.html'>
+      	   <p>
+             Speakers
+          </p>
+          <div class="img" style="background-image:url('http://tedxum.olemiss.edu/wp-content/uploads/sites/53/2015/10/speakers-wadkins.jpg');"></div>
+        </a>
+      </li>
+      <li class="col-lg-3 col-md-6 col-sm-12 ">
+        <a class="home-links btn btn-home" href='2015.html'>
+        	<p>
+            Last Year's TEDxUM
+          </p>
+          <div class="img" id="img3" style="background-image:url('http://tedxum.olemiss.edu/wp-content/uploads/sites/53/2015/10/MG_0057.jpg');"></div>
+        </a>
+      </li>
+      <li class="col-lg-3 col-md-6 col-sm-12">
+        <a class="home-links btn btn-home" href='Team.html'>
+    	     <p>
+             Team Members
+           </p>
+           <div class="img" id="img4" style="background-image:url('http://tedxum.olemiss.edu/wp-content/uploads/sites/53/2015/10/MG_0022-1-e1456623540161.jpg');"></div>
+         </a>
+      </li>
+    </ul>
+    </section>
+  </section>
+
+  <footer class="container">
+  	<div class="row">
+      <p class="col-sm-4">
+        &copy; 2016 TEDxUM
+      </p>
+      <ul class="col-sm-8" style="list-style: none list-style-type: none">
+        <li class="col-sm-1 btn btn-secondary homepage" style="list-style: none list-style-type: none">
+          <a href="#">
+          <img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/twitter.svg"/>
+          </a>
+        </li>
+        <li class="col-sm-1 btn btn-secondary" style="list-style: none list-style-type: none">
+          <a href="#">
+          <img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/facebook.svg"/>
+          </a>
+        </li>
+        <li class="col-sm-1 btn btn-secondary" style="list-style: none list-style-type: none">
+          <a href='#'>
+          <img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/instagram.svg"/>
+          </a>
+        </li>
+        <li class="col-sm-1 btn btn-secondary" style="list-style: none list-style-type: none">
+          <a href='#'>
+          <img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/medium.svg"/>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+    <script>
+      function navbarToggle() {
+          document.getElementById("navbar").classList.toggle("show");
+          document.getElementById("+").classList.toggle("active");
+      }
+
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+              document.getElementById("+").classList.remove("active");
+            }
+          }
+        }
+      }
+    </script>
+</body>
+</html>

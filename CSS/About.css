@@ -1,0 +1,265 @@
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+
+header {
+  padding: 20px 0;
+}
+
+
+header .row,
+footer .row {
+  display: flex;
+  align-items: center;
+}
+
+
+.btn:hover {
+  background-color: #F4F4F4;
+}
+
+
+.btn-fourth {
+  font-weight: 700;
+  font-size: 40px;
+  margin: 0;
+}
+
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+header p {
+  padding: 0 20px;
+  margin: 0;
+}
+
+
+.btn-third {
+  font-weight: bold;
+}
+
+
+.btn-third.active {
+  background-color: #F4F4F4;
+}
+
+
+.btn-third.active:hover {
+  background-color: #ffffff;
+}
+
+.dropbtn {
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #f4f4f4;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+}
+
+.dropdown-content a:hover {background-color: #f4f4f4}
+
+.show {display:block;}
+
+.jumbotron {
+  display: flex;
+  align-items: center;
+  background-image: url('http://tedxum.olemiss.edu/wp-content/uploads/sites/53/2016/02/SKB_2650-CL.jpg');
+  background-size: cover;
+  color: #ffffff;
+  height: 500px;
+  text-shadow: 0.25px 0.25px 0.25px #000000;
+}
+
+
+.jumbotron h2 {
+  font-size: 60px;
+  font-weight: 700;
+  margin: 0;
+  color: #fff;
+}
+
+
+.jumbotron h3 {
+  margin: 0 0 20px;
+  color: #fff;
+}
+
+
+.col-sm-6 {
+  padding-top: 10px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+
+section .row img {
+  margin: 0 0 30px;
+  width: 100%;
+}
+
+
+.col-md-6 {
+  margin: 0 0 30px;
+}
+
+
+.btn-about {
+  text-align: left;
+}
+
+
+.btn-speakers {
+  text-align: left;
+}
+
+
+.btn-2015 {
+  text-align: left;
+}
+
+
+.btn-team {
+  text-align: left;
+}
+
+
+.img {
+    position: relative;
+    float: left;
+    width:  500px;
+    height: 500px;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size: cover;
+}
+
+
+#img3 {
+  background-position: 37%;
+}
+
+
+#img4 {
+  background-position: 40% 20%;
+}
+
+
+.btn {
+  color: black;
+}
+
+
+.btn.btn-primary {
+  border-radius: 2px;
+  border: 0px;
+  color: #ff0000;
+  text-shadow: none;
+  background-color: #ffffff;
+}
+
+
+.btn.btn-primary:hover {
+  color: #ffffff;
+  background-color: #ff0000;
+}
+
+
+.btn.btn-secondary:hover {
+  background-color: #FF0000;
+}
+
+
+footer {
+  font-size: 12px;
+  padding: 20px 0;
+}
+
+
+footer .col-sm-8 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+footer ul {
+  list-style: none;
+}
+
+
+footer li img {
+  width: 32px;
+  height: 32px;
+}
+
+.col-md-12 {
+   text-align: center;
+   border-color: #000000;
+   border-radius: 5px;
+   background-color: #f4f4f4;
+}
+
+.col-md-6 {
+   border-radius: 5px;
+   background-color: #f4f4f4;
+   text-align: center;
+}
+
+.col-md-6.left {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.col-md-6.right {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+h5 {
+  font-weight: bold;
+}
+
+.contact {
+  text-align: center;
+  padding: 10px;
+  background-color: #f4f4f4;
+}
+
+.tix {
+  padding-top: 5px;
+  padding-bottom: 10px;
+  background-color: transparent;
+}
+
+.rates {
+  background-color: transparent;
+  padding: 10px;
+}

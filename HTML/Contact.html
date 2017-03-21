@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact - TEDxUM</title>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="../CSS/Contact.css">
+</head>
+<body>
+	<header class="container">
+  	<div class="row">
+      <a class="col-sm-4 btn btn-fourth" href='Home.html'><font color="red">TED<sup>x</sup></font>UM
+      </a>
+      <nav class="col-sm-8 text-right">
+        <a class="btn btn-third" href='About.html'>
+          About
+        </a>
+        <a class="btn btn-third" href='Tickets.html'>
+          Order Tickets
+        </a>
+        <a class="btn btn-third" href='Speakers.html'>
+          Speakers
+        </a>
+        <a class="btn btn-third active" href='Contact.html'>
+          Contact
+        </a>
+        <div class="dropdown">
+          <a onclick="navbarToggle()" class="btn btn-third dropbtn" id="+">+</a>
+          <div id="navbar" class="dropdown-content">
+            <a href="Theme.html">Theme</a>
+            <a href="2015.html">2015</a>
+            <a href="Team.html">Team Members</a>
+          </div>
+        </div>
+    </div>
+  </header>
+
+<div class="container">
+  <div class="row">
+    <div class="contact">
+      <h5>Contact Us!</h5>
+      <p>tedxum@gmail.com</p>
+      <p>(601) 317-1177</p>
+      <p>325 Deupree - Department of Political Science - The University of Mississippi - University, MS 38677</p>
+    </div>
+  </div>
+</div>
+
+    <footer class="container">
+      <div class="row">
+        <p class="col-sm-4">
+          &copy; 2016 TEDxUM
+        </p>
+        <ul class="col-sm-8">
+          <li class="col-sm-1 btn btn-secondary">
+            <a href="#">
+            <img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/twitter.svg"/>
+            </a>
+          </li>
+          <li class="col-sm-1 btn btn-secondary">
+            <a href="#">
+            <img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/facebook.svg"/>
+            </a>
+          </li>
+          <li class="col-sm-1 btn btn-secondary">
+            <a href='#'>
+            <img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/instagram.svg"/>
+            </a>
+          </li>
+          <li class="col-sm-1 btn btn-secondary">
+            <a href='#'>
+            <img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/medium.svg"/>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+        <script>
+          function navbarToggle() {
+              document.getElementById("navbar").classList.toggle("show");
+              document.getElementById("+").classList.toggle("active");
+          }
+
+          window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+
+              var dropdowns = document.getElementsByClassName("dropdown-content");
+              var i;
+              for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                  openDropdown.classList.remove('show');
+                  document.getElementById("+").classList.remove("active");
+                }
+              }
+            }
+          }
+        </script>
+</body>
+</html>
